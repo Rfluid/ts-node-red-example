@@ -8,7 +8,7 @@
   },
   "node-red": {
     "nodes": {
-      "ts-node-red-example": "./dist/ts-node-red-example.js"
+      "ts-node-red-example": "./src/ts-node-red-example.js"
     }
   },
   "keywords": [],
