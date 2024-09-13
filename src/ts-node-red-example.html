@@ -1,0 +1,38 @@
+<!-- You will have to use workarounds to set the node appearence with TS. Please let -->
+<!-- me know if something really works here. Use such a small js should not be a problem.-->
+<script type="text/javascript">
+  // Replace with actual node name
+  RED.nodes.registerType("ts-node-red-example", {
+    category: "function", // Set the category to achieve your desired organization.
+
+    // Customize the style
+    color: "#a6bbcf", // Set the color you want to use
+    icon: "file.svg", // Set the icon you want to use
+
+    defaults: {
+      name: { value: "" },
+    },
+
+    // Modify the inputs and outputs as needed
+    inputs: 1,
+    outputs: 1,
+
+    label: function () {
+      return this.name || "ts-node-red-example"; // Replace with actual node name
+    },
+  });
+</script>
+
+<!-- Replace with actual node name -->
+<script type="text/html" data-template-name="ts-node-red-example">
+  <!-- Customize the form -->
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> Input label</label>
+    <input type="text" id="node-input-name" placeholder="Some placeholder" />
+  </div>
+</script>
+
+<!-- Replace with actual node name -->
+<script type="text/html" data-help-name="ts-node-red-example">
+  <p>An example of a custom node built using TypeScript.</p>
+</script>
